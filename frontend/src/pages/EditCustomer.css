@@ -1,0 +1,183 @@
+.edit-customer-layout {
+    min-height: 100vh;
+    display: flex;
+    background: #f5f7fb;
+}
+
+.edit-customer-main {
+    flex: 1;
+    padding: 35px 45px;
+    overflow-y: auto;
+}
+
+.edit-customer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.edit-customer-header h1 {
+    margin: 0 0 6px;
+    color: #111827;
+    font-size: 30px;
+}
+
+.edit-customer-header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+.back-button {
+    padding: 10px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    color: #374151;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-button:hover {
+    background: #f9fafb;
+}
+
+.edit-customer-card {
+    max-width: 1000px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 32px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+}
+
+.edit-customer-error {
+    padding: 12px 14px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+    font-size: 14px;
+}
+
+.form-section {
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.form-section:last-of-type {
+    margin-bottom: 0;
+}
+
+.form-section h2 {
+    margin: 0 0 20px;
+    color: #111827;
+    font-size: 18px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    color: #111827;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-top: 5px;
+}
+
+.cancel-button,
+.save-button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cancel-button {
+    border: 1px solid #d1d5db;
+    background: white;
+    color: #374151;
+}
+
+.cancel-button:hover {
+    background: #f9fafb;
+}
+
+.save-button {
+    border: none;
+    background: #2563eb;
+    color: white;
+}
+
+.save-button:hover {
+    background: #1d4ed8;
+}
+
+.save-button:disabled {
+    background: #93c5fd;
+    cursor: not-allowed;
+}
+
+@media (max-width: 800px) {
+
+    .edit-customer-main {
+        padding: 25px 20px;
+    }
+
+    .edit-customer-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .edit-customer-card {
+        padding: 22px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .cancel-button,
+    .save-button {
+        width: 100%;
+    }
+}

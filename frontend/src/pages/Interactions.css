@@ -1,0 +1,471 @@
+/* =========================
+   INTERACTIONS LAYOUT
+========================= */
+
+.interactions-layout {
+    min-height: 100vh;
+    display: flex;
+    background: #f5f7fb;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.interactions-main {
+    flex: 1;
+    min-width: 0;
+    max-width: calc(100vw - 240px);
+    padding: 28px 28px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.interactions-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.interactions-header h1 {
+    margin: 0 0 6px;
+    font-size: 28px;
+    color: #111827;
+}
+
+.interactions-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.interactions-header-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* =========================
+   ADD INTERACTION BUTTON
+========================= */
+
+.add-interaction-btn {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 3px 8px rgba(37, 99, 235, 0.25);
+    transition: 0.2s ease;
+}
+
+.add-interaction-btn:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   CUSTOMER CONTEXT
+========================= */
+
+.customer-context-banner {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 18px 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.customer-context-banner h2 {
+    margin: 0 0 4px;
+    font-size: 18px;
+    color: #111827;
+}
+
+.customer-context-banner p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* =========================
+   FILTERS
+========================= */
+
+.interactions-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+    flex-wrap: nowrap;
+}
+
+.interactions-search {
+    flex: 1;
+    min-width: 0;
+}
+
+.interactions-search input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+
+.interactions-search input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.filter-row {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.filter-row select {
+    width: 125px;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.interactions-table-card {
+    width: 100%;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+    box-sizing: border-box;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.interactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: left;
+}
+
+/* =========================
+   COLUMN WIDTHS
+========================= */
+
+.interactions-table th:nth-child(1),
+.interactions-table td:nth-child(1) {
+    width: 10%;
+}
+
+.interactions-table th:nth-child(2),
+.interactions-table td:nth-child(2) {
+    width: 8%;
+}
+
+.interactions-table th:nth-child(3),
+.interactions-table td:nth-child(3) {
+    width: 9%;
+}
+
+.interactions-table th:nth-child(4),
+.interactions-table td:nth-child(4) {
+    width: 14%;
+}
+
+.interactions-table th:nth-child(5),
+.interactions-table td:nth-child(5) {
+    width: 20%;
+}
+
+.interactions-table th:nth-child(6),
+.interactions-table td:nth-child(6) {
+    width: 10%;
+}
+
+.interactions-table th:nth-child(7),
+.interactions-table td:nth-child(7) {
+    width: 9%;
+}
+
+.interactions-table th:nth-child(8),
+.interactions-table td:nth-child(8) {
+    width: 20%;
+}
+
+/* =========================
+   TABLE HEADER
+========================= */
+
+.interactions-table th {
+    background: #f9fafb;
+    padding: 12px 9px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #6b7280;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+/* =========================
+   TABLE DATA
+========================= */
+
+.interactions-table td {
+    padding: 12px 9px;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 13px;
+    color: #374151;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.interactions-table tr:hover {
+    background: #fcfcfd;
+}
+
+.interactions-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================
+   TYPE BADGES
+========================= */
+
+.type-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.type-badge.call {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.type-badge.email {
+    background: #f0fdf4;
+    color: #16a34a;
+}
+
+.type-badge.meeting {
+    background: #faf5ff;
+    color: #9333ea;
+}
+
+.type-badge.note {
+    background: #fffbeb;
+    color: #d97706;
+}
+
+/* =========================
+   STATUS BADGE
+========================= */
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 20px;
+    background: #f3f4f6;
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.interaction-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.interaction-actions button {
+    flex: 1;
+    min-width: 0;
+    padding: 7px 6px;
+    border-radius: 8px;
+    background: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+/* VIEW */
+
+.interaction-actions button:nth-child(1) {
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+}
+
+.interaction-actions button:nth-child(1):hover {
+    background: #eff6ff;
+}
+
+/* EDIT */
+
+.interaction-actions button:nth-child(2) {
+    color: #d97706;
+    border: 1px solid #fcd34d;
+}
+
+.interaction-actions button:nth-child(2):hover {
+    background: #fffbeb;
+}
+
+/* DELETE */
+
+.interaction-actions button:nth-child(3) {
+    color: #dc2626;
+    border: 1px solid #fecaca;
+}
+
+.interaction-actions button:nth-child(3):hover {
+    background: #fef2f2;
+}
+
+/* =========================
+   REMOVE ICONS / SYMBOLS
+========================= */
+
+.interaction-actions button svg,
+.interaction-actions button i,
+.interaction-actions button img,
+.interaction-actions button .icon,
+.interaction-actions button .material-icons,
+.interaction-actions button .fa,
+.interaction-actions button [class*="icon"] {
+    display: none !important;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.interactions-empty {
+    padding: 50px 20px;
+    text-align: center;
+    color: #6b7280;
+}
+
+.interactions-empty h3 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 18px;
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.interactions-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+
+    .interactions-main {
+        padding: 22px 20px;
+    }
+
+    .interactions-table th,
+    .interactions-table td {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .interaction-actions {
+        gap: 4px;
+    }
+
+    .interaction-actions button {
+        padding: 6px 5px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .interactions-main {
+        max-width: calc(100vw - 80px);
+        padding: 18px 14px;
+    }
+
+    .interactions-table th {
+        font-size: 9px;
+    }
+
+    .interactions-table td {
+        font-size: 11px;
+    }
+
+    .interactions-table th,
+    .interactions-table td {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .interaction-actions button {
+        padding: 5px 4px;
+        font-size: 10px;
+    }
+
+    .filter-row select {
+        width: 110px;
+    }
+}

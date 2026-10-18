@@ -1,0 +1,348 @@
+/* =========================
+   CONTACTS PAGE
+========================= */
+
+.contacts-layout {
+    min-height: 100vh;
+    display: flex;
+    background: #f5f7fb;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.contacts-main {
+    flex: 1;
+    min-width: 0;
+    max-width: calc(100vw - 240px);
+    padding: 30px 28px;
+    overflow: hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.contacts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+    gap: 20px;
+}
+
+.contacts-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.contacts-header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =========================
+   ADD CONTACT BUTTON
+========================= */
+
+.add-contact-btn {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 3px 8px rgba(37, 99, 235, 0.25);
+    transition: 0.2s ease;
+}
+
+.add-contact-btn:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.contacts-search {
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.contacts-search input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: white;
+    font-size: 14px;
+    color: #374151;
+    outline: none;
+}
+
+.contacts-search input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.contacts-search input::placeholder {
+    color: #8b8b8b;
+}
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.contacts-table-card {
+    width: 100%;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.contacts-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* =========================
+   COLUMN WIDTHS
+========================= */
+
+.contacts-table th:nth-child(1),
+.contacts-table td:nth-child(1) {
+    width: 13%;
+}
+
+.contacts-table th:nth-child(2),
+.contacts-table td:nth-child(2) {
+    width: 13%;
+}
+
+.contacts-table th:nth-child(3),
+.contacts-table td:nth-child(3) {
+    width: 13%;
+}
+
+.contacts-table th:nth-child(4),
+.contacts-table td:nth-child(4) {
+    width: 19%;
+}
+
+.contacts-table th:nth-child(5),
+.contacts-table td:nth-child(5) {
+    width: 11%;
+}
+
+.contacts-table th:nth-child(6),
+.contacts-table td:nth-child(6) {
+    width: 9%;
+}
+
+.contacts-table th:nth-child(7),
+.contacts-table td:nth-child(7) {
+    width: 22%;
+}
+
+/* =========================
+   TABLE HEADER
+========================= */
+
+.contacts-table th {
+    padding: 12px 9px;
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* =========================
+   TABLE DATA
+========================= */
+
+.contacts-table td {
+    padding: 13px 9px;
+    border-bottom: 1px solid #f1f3f5;
+    color: #374151;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.contacts-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================
+   TEXT HANDLING
+========================= */
+
+.contacts-table td:not(:last-child) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Email */
+.contacts-table td:nth-child(4) {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* =========================
+   CONTACT NAME
+========================= */
+
+.contacts-table td:first-child {
+    font-weight: 600;
+    color: #111827;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.contact-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+/* All action buttons */
+
+.contact-actions button {
+    flex: 1;
+    min-width: 0;
+    padding: 7px 7px;
+    border-radius: 8px;
+    background: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+/* =========================
+   VIEW
+========================= */
+
+.contact-actions button:nth-child(1) {
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+}
+
+.contact-actions button:nth-child(1):hover {
+    background: #eff6ff;
+}
+
+/* =========================
+   EDIT
+========================= */
+
+.contact-actions button:nth-child(2) {
+    color: #d97706;
+    border: 1px solid #fcd34d;
+}
+
+.contact-actions button:nth-child(2):hover {
+    background: #fffbeb;
+}
+
+/* =========================
+   DELETE
+========================= */
+
+.contact-actions button:nth-child(3) {
+    color: #dc2626;
+    border: 1px solid #fecaca;
+}
+
+.contact-actions button:nth-child(3):hover {
+    background: #fef2f2;
+}
+
+/* =========================
+   REMOVE ICONS / SYMBOLS
+========================= */
+
+.contact-actions button svg,
+.contact-actions button i,
+.contact-actions button img {
+    display: none !important;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+
+    .contacts-main {
+        padding: 25px 20px;
+    }
+
+    .contacts-table th,
+    .contacts-table td {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .contact-actions {
+        gap: 4px;
+    }
+
+    .contact-actions button {
+        padding: 6px 5px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .contacts-main {
+        max-width: calc(100vw - 80px);
+        padding: 22px 15px;
+    }
+
+    .contacts-header h1 {
+        font-size: 24px;
+    }
+
+    .contacts-table th {
+        font-size: 10px;
+    }
+
+    .contacts-table td {
+        font-size: 12px;
+    }
+
+    .contact-actions button {
+        padding: 5px 4px;
+        font-size: 10px;
+    }
+}
